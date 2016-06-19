@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="toolbarColor">#2A2040</color>
+    <color name="colorAccent">#847BA6</color>
+    <color name="colorAccent2">#847BA6</color>
+    <color name="pressed">#312559</color>
+    <color name="sndGreen">#57A64B</color>
+    <color name="white">#ffffff</color>
+    <color name="listBg">#140F1F</color>
+    <color name="button_color">#714BA6</color>
+    <color name="divider_color">#847BA6</color>
+    <color name="selected_green">#714BA6</color>
+</resources>

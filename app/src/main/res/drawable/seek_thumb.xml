@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <padding android:left="40px" android:right="40px" />
+            <size
+                android:height="80dp"
+                android:width="80dp" />
+
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/close_alarm"/>
+
+</layer-list>

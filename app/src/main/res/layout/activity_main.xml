@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor"
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeToolbar"
+        />
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="0dp"
+    android:layout_below="@+id/toolbar"
+    android:paddingBottom="20dp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="left"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Saati Ayarla:"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:paddingTop="30dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="2.19">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|clip_horizontal">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:drawableBottom="@drawable/up"
+                        android:id="@+id/hourUp"
+                        android:background="@drawable/numeric_buttons" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/txtHour"
+                        android:selectAllOnFocus="true"
+                        android:textAlignment="center"
+                        android:background="#00FFFFFF"
+                        style="@style/Base.Widget.AppCompat.Toolbar"
+                        android:textSize="25sp"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/txtMin"
+                        android:text="22"
+                        android:enabled="true"
+                        android:focusable="true" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/down"
+                        android:id="@+id/hourDown"
+                        android:background="@drawable/numeric_buttons" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=":"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_vertical"
+                android:textSize="50sp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:drawableBottom="@drawable/up"
+                        android:id="@+id/minuteUp"
+                        android:background="@drawable/numeric_buttons" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/txtMin"
+                        android:selectAllOnFocus="true"
+                        android:textAlignment="center"
+                        android:imeOptions="actionDone"
+                        android:background="#00FFFFFF"
+                        style="@style/Base.Widget.AppCompat.Toolbar"
+                        android:textSize="25sp"
+                        android:text="22"
+                        android:enabled="true"
+                        android:focusable="true" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:drawableTop="@drawable/down"
+                        android:id="@+id/minuteDown"
+                        android:background="@drawable/numeric_buttons" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Günleri Seç:"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="20dp"
+        android:id="@+id/toggleContainer"
+        android:paddingTop="5dp">
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Pzt"
+            android:id="@+id/tglPzt"
+            android:textOff="Pzt"
+            android:textOn="Pzt"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="2"
+            android:background="@drawable/toggle_selector"
+              />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Salı"
+            android:id="@+id/tglSal"
+            android:textOff="Salı"
+            android:textOn="Salı"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="3"
+            android:background="@drawable/toggle_selector"
+              />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Çrş"
+            android:id="@+id/tglCrs"
+            android:textOff="Çrş"
+            android:textOn="Çrş"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="4"
+            android:background="@drawable/toggle_selector"
+              />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Prş"
+            android:id="@+id/tglPrs"
+            android:textOff="Prş"
+            android:textOn="Prş"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="5"
+            android:background="@drawable/toggle_selector"
+              />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cum"
+            android:id="@+id/tglCum"
+            android:textOff="Cum"
+            android:textOn="Cum"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="6"
+            android:background="@drawable/toggle_selector"
+              />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cts"
+            android:id="@+id/tglCts"
+            android:textOff="Cts"
+            android:textOn="Cts"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="7"
+            android:background="@drawable/toggle_selector"
+              />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Pzr"
+            android:id="@+id/tglPzr"
+            android:textOff="Pzr"
+            android:textOn="Pzr"
+            android:layout_weight="14.2"
+            android:layout_margin="1dp"
+            android:tag="1"
+            android:background="@drawable/toggle_selector"
+              />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Haftalık Tekrarla :"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chRepeat"
+                android:textSize="20sp"
+                android:layout_alignParentEnd="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Erteleme :"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkSnooze"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/contSnooze">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Erteleme Süresi: "
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical|right">
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnSnooze"
+                style="@style/spinner_style"
+                android:theme="@android:style/Widget.Holo.Light.Spinner"
+                android:clickable="false"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Zil Sesi: "
+            android:id="@+id/textView4"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seç..."
+                android:id="@+id/sndBtn"
+                android:textStyle="bold"
+                android:background="@drawable/toggle_selector"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ses Seviyesi:"
+            android:id="@+id/textView3"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekVol"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mesaj:"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMessage"
+        android:selectAllOnFocus="true"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:text="Alarm" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+
+        android:shadowColor="#140400"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        android:textColor="#380E34"
+        android:textSize="20sp"
+        android:text="Kur"
+        android:id="@+id/btnSet"
+        android:background="@drawable/button_style"
+        android:visibility="invisible" />
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

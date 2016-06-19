@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.astrolojik_alarm.ozgunesim.astrolojikalarm.AlarmListActivity">
+
+    <android.support.v7.widget.Toolbar  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarColor"
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeToolbar"
+        />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lstAlarm"
+        android:layout_alignParentRight="true"
+        android:background="@color/listBg"
+        android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>

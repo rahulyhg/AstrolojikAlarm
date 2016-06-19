@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|top"
+            android:src="@drawable/alarm_bg"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 : 20"
+                    android:textSize="@dimen/alarm_clock_size"
+                    android:id="@+id/txtTime"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="10"
+                    android:layout_gravity="center_horizontal|top" />
+
+                <SeekBar
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar_close"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:thumb="@drawable/seek_thumb"
+                    android:thumbOffset="40px"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="30dp"
+                    android:splitTrack="false"
+                    android:layout_alignParentStart="true" />
+
+                <SeekBar
+                    android:layout_width="fill_parent"
+                    android:id="@+id/seekBar_snooze"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:thumb="@drawable/seek_thumb2"
+                    android:progressDrawable="@drawable/seekbar_style2"
+                    android:progress="0"
+                    android:rotation="180"
+                    android:thumbOffset="40px"
+                    android:splitTrack="false"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appNs="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!--item
+        android:id="@+id/settings"
+        android:orderInCategory="200"
+        android:title="Ayarlar"
+        android:icon="@drawable/up"
+        app:showAsAction="never"
+        ></item-->
+
+    <item
+        android:id="@+id/setAlarm"
+        android:orderInCategory="100"
+        android:title="Kur"
+        android:icon="@drawable/check"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+    <item
+        android:id="@+id/chHoroscope"
+        android:orderInCategory="200"
+        android:title="Burcunuzu Seçin"
+        app:showAsAction="never"
+        >
+            <!--menu xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:appNs="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+                <item
+                    android:id="@+id/tmPink"
+                    android:orderInCategory="400"
+                    android:title="Pembe"
+                    android:icon="@drawable/up"
+                    app:showAsAction="never"
+                    />
+                <item
+                    android:id="@+id/tmBlue"
+                    android:orderInCategory="500"
+                    android:title="Mavi"
+                    android:icon="@drawable/up"
+                    app:showAsAction="never"
+                    />
+
+            </menu-->
+
+    </item>
+
+
+
+
+</menu>

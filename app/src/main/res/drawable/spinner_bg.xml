@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item><layer-list>
+        <item><shape>
+            <!--gradient android:angle="90" android:endColor="@color/colorAccent" android:startColor="@color/toolbarColor" android:type="linear" /-->
+            <stroke android:width="@dimen/border_size" android:color="@color/button_color" />
+            <corners android:radius="@dimen/border_radius" />
+            <solid android:color="#00FFFFFF" />
+            <padding android:bottom="0dp" android:left="3dp" android:right="3dp" android:top="0dp" />
+        </shape></item>
+        <item >
+            <bitmap android:gravity="center|right" android:src="@drawable/spinner_arrow"  />
+        </item>
+    </layer-list></item>
+
+</selector>
